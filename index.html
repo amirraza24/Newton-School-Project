@@ -6,97 +6,591 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="css/style.css" </head>
+   <link rel="stylesheet" href="css/style.css" ></head>
+   <body>
+   <div class="app">
+    <div class="header">
+        TAXI FARE CALCULATOR 
+    </div>
+    <div>
 
-<body>
-   <nav id="navbar">
-      <div id="logo">
-         <img src="./image/logo.png" alt="logo">
-      </div>
-      <ul>
-         <li class="items"><a href="#">Home</a></li>
-         <li class="items"><a href="#">Menu</a></li>
-         <li class="items"><a href="#">Services</a></li>
-         <li class="items"><a href="#">About Us</a></li>
-      </ul>
-   </nav>
-   <section id="home">
-      <h1 class="h-primary">Welcome to Hungry Mind</h1>
-      <p>Food should not had only goal to feed people.Food should be tasty and healthy at a same time.</p>
-      <p>That's why we are here for we delevered delicious and healthy food at doorstep </p>
-      <p>We are here for you to serve a healthy and tasty food 24 Hours.</p>
-      <p>so why are waiting for make a order now</p>
-      <button class="btn">Order Now</button>
-   </section>
-   <section class="services-container">
-      <h1 class="h-primary center">Our Services</h1>
-      <div id="services">
-         <div class="box">
-            <img src="./image/secimg1.jpg" alt="section1 img">
-            <h2 class="h-secondry center">Online Order</h2>
+    <div>
+    <div>
+        <p>Total Distance</p>
+         km<input type="number"id="kmin" placeholder="Input Distance in Kelometer">
 
-            <p class="center">We delevered food to your doorstep.</p>
-         </div>
-         <div class="box">
-            <img src="./image/secimg2.jpg" alt="section2 img">
-            <h2 class="h-secondry center">Banquet Hall</h2>
-
-            <p class="center">Book for Marriage or Event.</p>
-         </div>
-         <div class="box">
-            <img src="./image/secimg3.jpg" alt="section3 img">
-            <h2 class="h-secondry center">Event Catering</h2>
-
-            <p class="center">We also Provide Catering Services</p>
-         </div>
-      </div>
-   </section>
-   <section id="client-section">
-      <h1 class="h-primary center">Our Clients</h1>
-      <div id="clients">
-         <div class="client-items">
-            <img src="./image/zm.png" alt="Zomato logo">
-         </div>
-         <div class="client-items">
-            <img src="./image/sw.png" alt="Swiggy logo">
-         </div>
-         <div class="client-items">
-            <img src="./image/uber.png" alt="Uber logo">
-         </div>
-      </div>
-
-   </section>
-   <section id="contact">
-      <h1 class="h-primary center">Contact Us</h1>
-      <div id="contact-box">
-         <form action="">
-            <div class="form-group">
-               <label for="name">Name: </label>
-               <input type="text" name="name" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-               <label for="name">Phone Number: </label>
-               <input type="number" name="number" id="name" placeholder="Enter your number">
-            </div>
-            <div class="form-group">
-               <label for="name">E-mail: </label>
-               <input type="email" name="email" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-               <label for="name">Message: </label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
+         <p>Total Number of Persons</p>
+         <input type="number" id="tnpersons" placeholder="Number of People"><br>
+         <button id="calculate">Calculate</button>
+         <p>Total Amount</p>
+         <span id="total">₹ 0.00</span>
+         <span id="each" style="display:none;">each</span>
+    </div>
+    </div>
+   </div>
+   <script src="javascript/script.js"></script>
+   </body>
+   
+   </html>
 
 
-         </form>
-      </div>
-   </section>
-  
-   <footer>
-      <div class="footer">
-         Copyrigth &copy; www.hungrymind.in.All rigths reserved!
-      </div>
-   </footer>
-</body>
 
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
